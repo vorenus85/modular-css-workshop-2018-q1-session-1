@@ -1,0 +1,27 @@
+/* modules - news */
+.news-list-wrapper {
+    // todo erre mixint
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: -$gutter;
+    padding: $gutter 0;
+}
+
+.news-item {
+    width: 100%;
+
+    .content-position & {
+        width: 50%; // TODO mixint írni rá amire hitkozhatunk a variablesből
+    }
+}
+
+.news-item-content {
+    padding: 0 $gutter;
+}
+
+.news-item-row {
+    padding: 5px 0;
+}

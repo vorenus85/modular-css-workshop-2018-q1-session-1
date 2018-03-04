@@ -1,0 +1,59 @@
+/* modules - product-items */
+
+.product-list {
+    // todo erre mixint
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-item-row {
+    padding: 5px 0;
+}
+
+.product-item {
+    width: 100%;
+    &-wrapper,
+    &-content {
+        padding: 10px;
+    }
+}
+
+.product-item-image {
+    padding: 5px;
+    img {
+        max-width:100%;
+    }
+}
+
+.product-item-row-actions {
+    .product-item-row {
+        display: inline-block;
+    }
+}
+
+.content-position {
+    .product-item { // TODO mixint írni rá amire hitkozhatunk a variablesből
+        width: 33.33%;
+    }
+}
+
+.sidebar-position {
+
+    .product-item-content {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .product-item-image {
+        width: 40%;
+        padding: 5px 10px;
+        float:left;
+    }
+
+    .product-item-row {
+        float:right;
+        width: 60%;
+    }
+}

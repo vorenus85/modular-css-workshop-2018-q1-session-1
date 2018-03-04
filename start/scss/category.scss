@@ -1,0 +1,40 @@
+/* modules - category */
+
+.category-module {
+
+    li {
+        position: relative;
+    }
+
+    a {
+        text-transform: uppercase;
+        padding: 10px 15px;
+        color: $white;
+        display: block;
+        &:hover {
+            background: $global-hover-color;
+        }
+    }
+}
+
+
+
+.header-position {
+    &.category-module {
+        background: $categories-background;
+        padding: 10px 0;
+    }
+
+    .category-menu {
+        & > li {
+
+            display: inline-block;
+        }
+    }
+}
+
+.sidebar-position {
+    &.category-module {
+        background: $categories-background;
+    }
+}

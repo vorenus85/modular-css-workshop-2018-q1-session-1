@@ -1,0 +1,43 @@
+/* componetens - button */
+
+.btn {
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 3px 5px;
+}
+
+.btn-lg {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.btn-default{
+    border: $btn-border-width solid $btn-default-border-color;
+    background: $btn-default-background;
+    color: $btn-default-color;
+
+    &:hover {
+        border-color: $btn-default-hover-border-color;
+        background: $btn-default-hover-background;
+        color: $btn-default-hover-color;
+    }
+}
+
+.btn-primary{
+    border: $btn-border-width solid $btn-primary-border-color;
+    background: $btn-primary-background;
+    color: $btn-primary-color;
+
+    &:hover {
+        border-color: $btn-primary-hover-border-color;
+        background: $btn-primary-hover-background;
+        color: $btn-primary-hover-color;
+    }
+}
