@@ -8,17 +8,17 @@
     display: inline-block;
 }
 
-.btn-sm {
+.btn-sm { // todo mixint írni rá
     font-size: 10px;
     padding: 3px 5px;
 }
 
-.btn-lg {
+.btn-lg { // todo mixint írni rá
     font-size: 18px;
     padding: 10px 15px;
 }
 
-.btn-default{
+.btn-default{ // todo mixint írni rá
     border: $btn-border-width solid $btn-default-border-color;
     background: $btn-default-background;
     color: $btn-default-color;
@@ -30,7 +30,7 @@
     }
 }
 
-.btn-primary{
+.btn-primary{ // todo mixint írni rá
     border: $btn-border-width solid $btn-primary-border-color;
     background: $btn-primary-background;
     color: $btn-primary-color;
