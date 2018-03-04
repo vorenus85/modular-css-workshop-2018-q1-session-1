@@ -59,21 +59,21 @@ $badge-background: lighten($global-color, 10%);  //#ededed;
 /* btns */
 $btn-border-width: 2px;
 
-/* btn-default */
-$btn-default-background: $white;
-$btn-default-border-color: $global-color;
-$btn-default-color: #222;
-$btn-default-hover-background: $white;
-$btn-default-hover-border-color: $global-hover-color;
-$btn-default-hover-color: #444;
-
-/* btn-primary*/
-$btn-primary-background: $global-color;
+/* btn-primary */
+$btn-primary-background: $white;
 $btn-primary-border-color: $global-color;
-$btn-primary-color: $white;
-$btn-primary-hover-background: $global-hover-color;
+$btn-primary-color: #222;
+$btn-primary-hover-background: $white;
 $btn-primary-hover-border-color: $global-hover-color;
-$btn-primary-hover-color: $white;
+$btn-primary-hover-color: #444;
+
+/* btn-secondary*/
+$btn-secondary-background: $global-color;
+$btn-secondary-border-color: $global-color;
+$btn-secondary-color: $white;
+$btn-secondary-hover-background: $global-hover-color;
+$btn-secondary-hover-border-color: $global-hover-color;
+$btn-secondary-hover-color: $white;
 
 /* product-items */
 

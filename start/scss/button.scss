@@ -18,19 +18,7 @@
     padding: 10px 15px;
 }
 
-.btn-default{
-    border: $btn-border-width solid $btn-default-border-color;
-    background: $btn-default-background;
-    color: $btn-default-color;
-
-    &:hover {
-        border-color: $btn-default-hover-border-color;
-        background: $btn-default-hover-background;
-        color: $btn-default-hover-color;
-    }
-}
-
-.btn-primary{
+.btn-primary {
     border: $btn-border-width solid $btn-primary-border-color;
     background: $btn-primary-background;
     color: $btn-primary-color;
@@ -39,5 +27,17 @@
         border-color: $btn-primary-hover-border-color;
         background: $btn-primary-hover-background;
         color: $btn-primary-hover-color;
+    }
+}
+
+.btn-secondary {
+    border: $btn-border-width solid $btn-secondary-border-color;
+    background: $btn-secondary-background;
+    color: $btn-secondary-color;
+
+    &:hover {
+        border-color: $btn-secondary-hover-border-color;
+        background: $btn-secondary-hover-background;
+        color: $btn-secondary-hover-color;
     }
 }
