@@ -1,0 +1,19 @@
+/* layout - footer */
+
+footer {
+    background: $footer-background;
+    padding: 15px 0;
+    color: $footer-color;
+
+    a {
+        color: $footer-link-color;
+    }
+
+    li {
+        padding: 5px 0;
+    }
+}
+
+.copyright {
+    padding: 10px 0;
+}

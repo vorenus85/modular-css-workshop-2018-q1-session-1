@@ -1,0 +1,13 @@
+/* componetens - form */
+
+.form-control {
+    border: $input-border-width solid $input-border-color;
+    background: $input-background;
+    color: $input-color;
+    line-height: 1.5em;
+    padding: 5px 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

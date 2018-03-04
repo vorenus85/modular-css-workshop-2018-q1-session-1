@@ -1,0 +1,12 @@
+/* modules - login-links */
+.login-links-module-wrapper {
+    padding: 0 10px;
+    li {
+        float: left;
+        padding: 2px 5px;
+
+        .fa {
+            padding-right: 5px;
+        }
+    }
+}

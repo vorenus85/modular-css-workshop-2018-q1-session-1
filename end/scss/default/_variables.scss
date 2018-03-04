@@ -1,0 +1,83 @@
+/* default theme */
+
+/* globals */
+$global-background: #fff;
+$global-font-size: 14px;
+$global-border-radius: 0;
+$base-font-size: 14px;
+
+/* global colors */
+$white: #fff;
+$black: #000;
+$global-color: lightgray;
+$global-hover-color: gray;
+$global-font-color: #222;
+
+/* layout */
+$gutter: 15px;
+$gap: ($gutter * 2);
+$sidebar-width: (300px - $gap);
+$content-width: calc(100% - #{$sidebar-width});
+$container-width: 1140px;
+
+/* fonts */
+// fonts
+
+$theme-fonts: "https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400i,900i|Roboto:400,400i,700,700i&subset=latin-ext";
+
+@if($theme-fonts) {
+    @import url($theme-fonts);
+}
+
+$body-font-family: "Roboto",sans-serif ;
+$module-head-font-family: "Playfair Display";
+
+/* header */
+$header-background: lighten($global-color, 10%); //#fafafa
+
+/* category */
+$categories-background: darken($global-color, 10%); //#fafafa
+
+/* footer */
+$footer-background: darken($global-color, 10%); //#bababa
+$footer-link-color: $global-font-color;
+$footer-color: $global-font-color;
+
+/* links */
+$link-color: darken($global-color, 10%); //#bababa
+$link-hover-color: darken($global-hover-color, 10%); //#676767
+
+/* form */
+$input-border-color: #222;
+$input-color: $global-font-color;
+$input-background: $white;
+$input-border-width: 1px;
+
+/* badge */
+$badge-background: lighten($global-color, 10%);  //#ededed;
+
+/* btns */
+$btn-border-width: 2px;
+
+/* btn-default */
+$btn-default-background: $white;
+$btn-default-border-color: $global-color;
+$btn-default-color: #222;
+$btn-default-hover-background: $white;
+$btn-default-hover-border-color: $global-hover-color;
+$btn-default-hover-color: #444;
+
+/* btn-primary*/
+$btn-primary-background: $global-color;
+$btn-primary-border-color: $global-color;
+$btn-primary-color: $white;
+$btn-primary-hover-background: $global-hover-color;
+$btn-primary-hover-border-color: $global-hover-color;
+$btn-primary-hover-color: $white;
+
+/* product-items */
+
+/* TODO media-queries,
+** TODO a container-width media-queryn-ként változó lesz
+** TODO a media-queryk szintén változóba legyenek
+*/

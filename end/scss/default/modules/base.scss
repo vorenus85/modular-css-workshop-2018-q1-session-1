@@ -1,0 +1,44 @@
+/* modules - base */
+.module {
+    padding: 10px 0;
+
+    &-title {
+        line-height: 1.5em;
+        padding: 10px 0;
+        font-family: $module-head-font-family;
+        text-transform: uppercase;
+        &:before {
+            display: table;
+            content: " ";
+        }
+    }
+
+    &-body {
+        &:before {
+            display: table;
+            content: " ";
+        }
+    }
+}
+
+.content-position {
+    .module-title {
+        font-size: 18px;
+        font-weight:bold;
+    }
+}
+
+.footer-position {
+    .module-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.sidebar-position {
+    .module-title {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
