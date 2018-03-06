@@ -11,12 +11,26 @@ Itt találhatjuk az összes scss fájl ömlesztve, ezekből a fájlokből kell f
 
 ## 3. A default mappa létrehozása
 
-- hozzunk létre egy <b>scss</b> és abban egy további <b>default</b> mappát és egy <b>index.scss</b> fájlt
-- az <b>index.scss</b> fájl lesz a belépési pontunk a default mappához
-- az index.scss mappában helyezzük el a következő sorokat:
+- hozzunk létre egy <b>scss</b> és abban egy további <b>default</b> mappát és azzal egy szinten egy <b>_index.scss</b> fájlt
+- az <b>index.scss</b> fájl lesz a belépési pont a gulpnak
+- az index.scss fájlban helyezzük el a következő sorokat:
 ```
-@import 'default/variables';
-@import 'default/index'; // import default theme
+// default theme
+@import 'default/default.scss';
+```
+
+- a default mappán belül hozzunk létre egy default.scss nevű a fájlt a tartalma a következő legyen:
+
+```
+// default variables
+@import 'variables';
+
+// import default theme
+@import "base";
+@import "utils";
+@import "layout";
+@import "components";
+@import "modules";
 ```
 
 ## 4. Az almappák létrehozás
@@ -40,16 +54,6 @@ _utils.scss
 _variables.scss
 ```
 
-- a <b>default</b> mappa gyökerében hozzunk létre egy <b>index.scss</b>, majd ebbe a fájlba másoljuk be a következő sorokat:
-
-```
-@import "base";
-@import "utils";
-@import "layout";
-@import "components";
-@import "modules";
-```
-
 ## 5. A <b>components</b> mappa
 
 - másoljuk át a következő fájlokat a <b>components</b> mappába
@@ -60,12 +64,12 @@ button.scss
 form.scss
 ```
 
-- hozzunk létre egy _index.scss nevű fájlt a <b>components</b> mappába, tartalma a következő legyen:
+- nyissuk meg a <b>default</b> mappában a _components.scss fájlt, és nézzük meg a tartalmát:
 
 ```
-@import "badge";
-@import "button";
-@import "form";
+@import "components/badge";
+@import "components/button";
+@import "components/form";
 ```
 
 ## 6. A <b>layout</b> mappa
@@ -79,13 +83,13 @@ header.scss
 sidebar.scss
 ```
 
-- hozzunk létre egy _index.scss nevű fájlt a <b>layout</b> mappába, tartalma a következő legyen:
+- nyissuk meg a <b>default</b> mappában a _layout.scss fájlt, és nézzük meg a tartalmát:
 
 ```
-@import "content";
-@import "footer";
-@import "header";
-@import "sidebar";
+@import "layout/content";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sidebar";
 ```
 
 ## 7. A <b>modules</b> mappa
@@ -103,17 +107,17 @@ product-item.scss
 search.scss
 ```
 
-- hozzunk létre egy _index.scss nevű fájlt a <b>modules</b> mappába, tartalma a következő legyen:
+- nyissuk meg a <b>default</b> mappában a _modules.scss fájlt, és nézzük meg a tartalmát:
 
 ```
-@import 'base';
-@import 'category';
-@import 'header-links';
-@import 'login-links';
-@import 'logo';
-@import 'news';
-@import 'product-item';
-@import 'search';
+@import 'modules/base';
+@import 'modules/category';
+@import 'modules/header-links';
+@import 'modules/login-links';
+@import 'modules/logo';
+@import 'modules/news';
+@import 'modules/product-item';
+@import 'modules/search';
 ```
 
 ## 8. A <b>utils</b> mappa
@@ -128,14 +132,14 @@ float.scss
 lists.scss
 ```
 
-- hozzunk létre egy _index.scss nevű fájlt a <b>utils</b> mappába, tartalma a következő legyen:
+- nyissuk meg a <b>default</b> mappában a _utils.scss fájlt, és nézzük meg a tartalmát:
 
 ```
-@import 'align';
-@import 'cols';
-@import 'container';
-@import 'float';
-@import 'lists';
+@import 'utils/align';
+@import 'utils/cols';
+@import 'utils/container';
+@import 'utils/float';
+@import 'utils/lists';
 ```
 
 ## 9. Futassuk a gulp taskot, gyúrjuk egybe a css-t
