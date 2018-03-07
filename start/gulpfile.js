@@ -27,7 +27,7 @@ gulp.task('sass', function(){
         outputStyle: 'compressed'
     })) // Converts Sass to Css with gulp sass
     .pipe(concat(minCss))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('/map'))
     .pipe(gulp.dest(distCss))
     .pipe(browserSync.stream());
 });
