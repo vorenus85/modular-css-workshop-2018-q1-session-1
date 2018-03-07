@@ -35,7 +35,7 @@ Itt találhatjuk az összes scss fájl ömlesztve, ezekből a fájlokből kell f
 
 ## 4. Az almappák létrehozás
 
-- a <b>default</b> mappában hozzuk létre a következő mappákat:
+- a <b>default</b> mappában hozzunk létre a következő mappákat:
 ```
 components
 layout
@@ -64,7 +64,7 @@ button.scss
 form.scss
 ```
 
-- nyissuk meg a <b>default</b> mappában a _components.scss fájlt, és nézzük meg a tartalmát:
+- nyissuk meg a <b>default</b> mappában a _components.scss fájlt, ez legyen a tertalma:
 
 ```
 @import "components/badge";
@@ -83,7 +83,7 @@ header.scss
 sidebar.scss
 ```
 
-- nyissuk meg a <b>default</b> mappában a _layout.scss fájlt, és nézzük meg a tartalmát:
+- nyissuk meg a <b>default</b> mappában a _layout.scss fájlt, ez legyen a tartalma:
 
 ```
 @import "layout/content";
@@ -107,7 +107,7 @@ product-item.scss
 search.scss
 ```
 
-- nyissuk meg a <b>default</b> mappában a _modules.scss fájlt, és nézzük meg a tartalmát:
+- nyissuk meg a <b>default</b> mappában a _modules.scss fájlt, ez legyen a tertalma:
 
 ```
 @import 'modules/base';
@@ -132,7 +132,7 @@ float.scss
 lists.scss
 ```
 
-- nyissuk meg a <b>default</b> mappában a _utils.scss fájlt, és nézzük meg a tartalmát:
+- nyissuk meg a <b>default</b> mappában a _utils.scss fájlt, ez legyen a tertalma:
 
 ```
 @import 'utils/align';
